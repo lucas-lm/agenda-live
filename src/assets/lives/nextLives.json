@@ -1,5 +1,15 @@
 {
-    "content": [{"1": "2"}],
+    "content": [
+        {
+            "id": "1",
+            "liveName": "DW News livestream | Headline news from around the world",
+            "channelName": "DW News",
+            "liveDate": "2022-02-21",
+            "liveTime": null,
+            "liveLink": "https://www.youtube.com/watch?v=V9KZGs1MtP4",
+            "registrationDate": "2022-02-21"
+        }
+    ],
     "first": true,
     "last": true,
     "number": 1,
