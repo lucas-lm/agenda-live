@@ -10,12 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ListLiveComponent } from './views/home/list-live/list-live.component';
+import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ListLiveComponent
+    ListLiveComponent,
+    LocalDateTimePipe
   ],
   imports: [
     HttpClientModule,
@@ -26,7 +28,9 @@ import { ListLiveComponent } from './views/home/list-live/list-live.component';
     MatTabsModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [
+    LocalDateTimePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
