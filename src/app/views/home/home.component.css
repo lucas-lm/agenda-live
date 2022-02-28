@@ -1,3 +1,16 @@
 .title {
     justify-content: center;
 }
+
+.logo {
+    display: block;
+    border-radius: 8px;
+    padding: 8px 16px;
+    /* background-color: palevioletred; */
+    border: solid paleturquoise;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 8px;
+}
