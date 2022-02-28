@@ -5,7 +5,7 @@
         <mat-card class="video-card">
           <mat-card-header class="card-header">
             <mat-card-title>{{live.liveName}}</mat-card-title>
-            <mat-card-subtitle>Now at {{live.channelName}}</mat-card-subtitle>
+            <mat-card-subtitle>Agora no canal <strong>{{live.channelName}}</strong></mat-card-subtitle>
           </mat-card-header>
           <mat-card-content class="video-container">
             <iframe 
@@ -24,7 +24,7 @@
         <mat-card class="video-card">
           <mat-card-header class="card-header">
             <mat-card-title>{{live.liveName}}</mat-card-title>
-            <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>{{live.channelName}}</strong> em {{live.liveDate | localDateTime:"LL" }}</mat-card-subtitle>
           </mat-card-header>
           <mat-card-content class="video-container">
             <iframe
@@ -41,7 +41,7 @@
             <mat-card class="video-card">
               <mat-card-header class="card-header">
                 <mat-card-title>{{live.liveName}}</mat-card-title>
-                <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
+                <mat-card-subtitle><strong>{{live.channelName}}</strong>, {{live.liveDate | localDateTime:"calendar" }}</mat-card-subtitle>
               </mat-card-header>
               <mat-card-content class="video-container">
                 <iframe

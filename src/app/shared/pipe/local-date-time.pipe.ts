@@ -6,9 +6,12 @@ import * as moment from 'moment';
 })
 export class LocalDateTimePipe implements PipeTransform {
 
-  transform(date: string): string {
+  transform(date: string, format="LLL", locale='pt-br'): string {
+    moment.locale(locale)
     const dateOut = moment(date, "YYYY-MM-DDTHH:mm:ss")
-    return dateOut.format("DD-MM-YYYY HH:mm");
+    if (format === 'relative') return dateOut.fromNow()
+    if (format === 'calendar') return dateOut.calendar()
+    return dateOut.format(format);
   }
 
 }
