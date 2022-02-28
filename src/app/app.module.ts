@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -29,6 +29,7 @@ import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
     MatCardModule
   ],
   providers: [
+    Title,
     LocalDateTimePipe
   ],
   bootstrap: [AppComponent]
