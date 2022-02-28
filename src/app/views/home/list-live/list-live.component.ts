@@ -12,6 +12,7 @@ export class ListLiveComponent implements OnInit {
 
   livesPrevious!: Live[];
   livesNext!: Live[];
+  livesCurrent!: Live[];
 
   constructor(
     public liveService: LiveService,
@@ -29,7 +30,6 @@ export class ListLiveComponent implements OnInit {
         live.urlSafe = this.sanitazer
           .bypassSecurityTrustResourceUrl(live.liveLink.replace('watch?v=', 'embed\/'));
       });
-      console.log(this.livesPrevious)
     })
 
     this.liveService.getLivesWithFlag('next').subscribe(data => {
@@ -38,7 +38,14 @@ export class ListLiveComponent implements OnInit {
         live.urlSafe = this.sanitazer
           .bypassSecurityTrustResourceUrl(live.liveLink.replace('watch?v=', 'embed\/'))
       })
-      console.log(this.livesNext)
+    })
+
+    this.liveService.getLivesWithFlag('current').subscribe(data => {
+      this.livesCurrent = data.content;
+      this.livesCurrent.forEach(live => {
+        live.urlSafe = this.sanitazer
+          .bypassSecurityTrustResourceUrl(live.liveLink.replace('watch?v=', 'embed\/'))
+      })
     })
   }
 
