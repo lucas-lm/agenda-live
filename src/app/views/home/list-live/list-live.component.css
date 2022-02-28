@@ -1,0 +1,13 @@
+.cards-container {
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 560px;
+    margin: 8px;
+    border: solid #d3d3d3 1px;
+    border-radius: 8px;
+}
+
