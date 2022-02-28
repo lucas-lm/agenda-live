@@ -1,11 +1,16 @@
 .cards-container {
+    margin: 0 auto;
     padding: 8px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 3200px;
+    background-color: rgba(240, 248, 255, 0.336);
 }
 
 .video-card {
-    width: 448px;
+    width: 27%;
+    max-width: 560px;
     margin: 8px;
     border: solid #d3d3d3 1px;
     border-radius: 8px;
@@ -15,4 +20,46 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.video-container {
+    background-color: #d3d3d3;
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden; 
+}
+
+.video-container iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+@media screen and (max-width: 1440px) {
+    .video-card {
+        width: 40%;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .video-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .video-card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .video-card {
+        width: 90%;
+    }
 }
