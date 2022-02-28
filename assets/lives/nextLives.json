@@ -1,0 +1,49 @@
+{
+    "content": [
+        {
+            "id": "1",
+            "liveName": "CBLOL Academy 2022: 1ª Etapa - Fase de Pontos - Md1 | Semana 6 - Rodada 11",
+            "channelName": "CBLOL",
+            "liveDate": "2022-03-01T16:30:00",
+            "liveTime": null,
+            "liveLink": "https://www.youtube.com/watch?v=KHB10Mw1hBc",
+            "registrationDate": "2022-02-28T00:00:00"
+        },
+        {
+            "id": "2",
+            "liveName": "MERCADO FINANCEIRO - 28/02/22",
+            "channelName": "Jovem Pan News",
+            "liveDate": "2022-02-28T14:30:00",
+            "liveTime": null,
+            "liveLink": "https://www.youtube.com/watch?v=XxMXAU7ezQQ",
+            "registrationDate": "2022-02-28"
+        },
+        {
+            "id": "3",
+            "liveName": "OS PINGOS NOS IS - 28/02/2022",
+            "channelName": "Os Pingos nos Is",
+            "liveDate": "2022-02-28T18:00:00",
+            "liveTime": null,
+            "liveLink": "https://www.youtube.com/watch?v=lfME7LUOdSo",
+            "registrationDate": "2022-02-28"
+        },
+        {
+            "id": "4",
+            "liveName": "TS5 no Estúdio Showlivre 2022 - Ao Vivo",
+            "channelName": "Showlivre",
+            "liveDate": "2022-03-03T14:00:00",
+            "liveTime": null,
+            "liveLink": "https://www.youtube.com/watch?v=6_rbOpSieIs",
+            "registrationDate": "2022-02-28"
+        }
+    ],
+    "first": true,
+    "last": true,
+    "number": 1,
+    "numberOfElements": 1,
+    "pageable": [],
+    "size": 1,
+    "sort": 1,
+    "totalElements": 1,
+    "totalPages": 1
+}
