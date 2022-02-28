@@ -32,25 +32,25 @@
             ></iframe>
           </mat-card-content>
         </mat-card>
-        <mat-tab label="PRÓXIMAS">
-          <div class="cards-container">
-            <ng-container *ngFor="let live of livesNext">
-              <mat-card class="video-card">
-                <mat-card-title>{{live.liveName}}</mat-card-title>
-                <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
-                <mat-card-content>
-                  <iframe 
-                    width="560" height="315" 
-                    [src]="live.urlSafe" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </mat-card-content>
-              </mat-card>
-            </ng-container>
-          </div>
-        </mat-tab>
       </ng-container>
+      <mat-tab label="PRÓXIMAS">
+        <div class="cards-container">
+          <ng-container *ngFor="let live of livesNext">
+            <mat-card class="video-card">
+              <mat-card-title>{{live.liveName}}</mat-card-title>
+              <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
+              <mat-card-content>
+                <iframe 
+                  width="560" height="315" 
+                  [src]="live.urlSafe" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </mat-card-content>
+            </mat-card>
+          </ng-container>
+        </div>
+      </mat-tab>
     </div>
   </mat-tab>
 </mat-tab-group>
