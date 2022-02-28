@@ -5,9 +5,14 @@
 }
 
 .video-card {
-    width: 560px;
+    width: 448px;
     margin: 8px;
     border: solid #d3d3d3 1px;
     border-radius: 8px;
 }
 
+.card-header ::ng-deep * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

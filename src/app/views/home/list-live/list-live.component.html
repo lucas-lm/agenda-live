@@ -3,11 +3,13 @@
     <div class="cards-container">
       <ng-container *ngFor="let live of livesCurrent">
         <mat-card class="video-card">
-          <mat-card-title>{{live.liveName}}</mat-card-title>
-          <mat-card-subtitle>Now at {{live.channelName}}</mat-card-subtitle>
+          <mat-card-header class="card-header">
+            <mat-card-title>{{live.liveName}}</mat-card-title>
+            <mat-card-subtitle>Now at {{live.channelName}}</mat-card-subtitle>
+          </mat-card-header>
           <mat-card-content>
             <iframe 
-              width="560" height="315" 
+              width="448" height="252"
               [src]="live.urlSafe" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -21,11 +23,13 @@
     <div class="cards-container">
       <ng-container *ngFor="let live of livesPrevious">
         <mat-card class="video-card">
-          <mat-card-title>{{live.liveName}}</mat-card-title>
-          <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
+          <mat-card-header class="card-header">
+            <mat-card-title>{{live.liveName}}</mat-card-title>
+            <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
+          </mat-card-header>
           <mat-card-content>
             <iframe 
-              width="560" height="315" 
+              width="448" height="252"
               [src]="live.urlSafe" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -37,11 +41,13 @@
         <div class="cards-container">
           <ng-container *ngFor="let live of livesNext">
             <mat-card class="video-card">
-              <mat-card-title>{{live.liveName}}</mat-card-title>
-              <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
+              <mat-card-header class="card-header">
+                <mat-card-title>{{live.liveName}}</mat-card-title>
+                <mat-card-subtitle>{{live.channelName}} at {{live.liveDate | localDateTime}}</mat-card-subtitle>
+              </mat-card-header>
               <mat-card-content>
                 <iframe 
-                  width="560" height="315" 
+                  width="448" height="252" 
                   [src]="live.urlSafe" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
